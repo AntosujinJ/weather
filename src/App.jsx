@@ -37,8 +37,8 @@ const getdata=async()=>{
       <h1>City:{data.city.name}</h1>
       <h1>Country:{data.city.country}</h1>
       <h1>Temp:{Math.round(data.list[0].main.temp)}c</h1>
-      <h1>Min temp:{Math.round(data.list[0].main.temp_min)}c</h1>
-      <h1>Min temp:{Math.round(data.list[0].main.temp_max)}c</h1>
+      <h1>Min temp:{(Math.round(data.list[0].main.temp_min))/10}c</h1>
+      <h1>Min temp:{(Math.round(data.list[0].main.temp_max))/10}c</h1>
       <h1>Weather:{data.list[0].weather[0].main}</h1>
       </div>
       )}
